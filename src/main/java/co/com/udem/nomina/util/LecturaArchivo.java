@@ -27,6 +27,7 @@ public class LecturaArchivo {
 			while (scanner.hasNextLine()) {
 				String registro = scanner.nextLine();
 				leerRegistro(registro);
+				cantidadRegistros++;
 			}
 		} catch (FileNotFoundException e) {
 			mensaje = "El archivo no està en la ruta especificada";
